@@ -1,0 +1,131 @@
+{
+  "main": {
+    "name": "Derek Niess",
+    "occupation": "Software Engineer",
+    "description": "I recently graduated with a BS in Computer Engineering from the University of Illinois at Urbana-Champaign where I explored sub-disciplines in Artificial Intelligence, Distributed Computing, Data Systems, and Operating Systems",
+    "image": "profilepic.jpeg",
+    "bio": "TODO: Add a little bio of yourself here",
+    "contactmessage": "Feel free to call/text me any time between 11 a.m. to 6 p.m. M-F, or send me an email using the below form:",
+    "email": "derekniess96@gmail.com",
+    "phone": "630-606-2890",
+    "address": {
+      "city": "Chicago",
+      "state": "Illinois"
+    },
+    "website": "http://www.derekniess.com",
+    "resumedownload": "http://derekniess.com",
+    "social": [
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/derek-niess-128a34126/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "github",
+        "url": "http://github.com/derekniess",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillheadline": "Full-stack development and parallel programming are my bread and butter",
+    "skillmessage": ", though I also have some experience in data science, database optimization, control systems, and operating systems as a result of academic and professional study. Cumulatively, I have been building web apps, primarily in Python and Javascript, for around 3 years now. Throughout that time, I have developed with a handful of frameworks and database systems listed below, and I have utilized many libraries not listed as it would be a bit excessive to list them all out. If you have a particular library or framework that you are looking for, I'm confident that I have the related foundational experience to start applying it in no time!",
+    "education": [
+      {
+        "school": "University of Illinois at Urbana-Champaign",
+        "degree": "Bachelor of Science in Computer Engineering",
+        "graduated": "May 2020",
+        "description": "Graduated with an overall GPA of 3.64"
+      }
+    ],
+    "work": [
+      {
+        "company": "Beacon LLC",
+        "title": "Founder",
+        "years": "Feb 2020 - present",
+        "description": "I architected and am currently marketing a patent-pending mobile application for smartwatch devices designed as a 3D guidance system to help navigate mountaineers, surfers, and divers out of natural disasters such as avalanches, cave-ins, and wipe-outs as well as any other orientation-deprived situation where the user needs to know the quickest route to the surface. Given the safety-critical and mission-critical nature of the app, I wrote scripts to perform 1000's of simulations on sensor data as per tolerance analysis to ensure a maximal margin of error of 5 degrees is met based on the most inaccurate commercial sensors I could find. The app is heavily designed with multi-threading and parallel GPU computing in mind, as this provides the most energy-efficient use of computation power for embedded systems. While I don't want to give away too many details, developing the app involved dedicated research into sensor fusion algorithms, accelerated 3D graphics, iOS and Android (Java) development, and optimized parallel processing."
+      },
+      {
+        "company": "Monument Labs Inc.",
+        "title": "Software Developer Intern",
+        "years": "June 2019 - Aug 2019",
+        "description": "My time at Monument was fast-paced from the start, where I immediately began completing tickets within their CI/CD workflow for new releases of their main software. Daily peer reviews pushed me to further develop strong habits of writing clean, readable, and efficient code in accordance with commonly accepted best practices. Throughout the internship, I made contributions to almost all parts of their software, including their main web API. Some examples of my work include: 1) designing relational schema and scripts to perform database migrations on 1,000,000+ records with zero downtime on a MySQL version that does not inherently allow online alterations 2) developing automated unit/regression test suites in PyTest and Unittest responsible for checking 100+ test cases on Monument's main backend API as they relate to all scopes of testing in quality control 3) incorporating real-time user analytics data pipeline into flagship devices by implementing a background ETL service that continuously aggregates and streams new user data from 1,000s of users to AWS Kinesis 4) implementing multi-threaded event handling for external storage device processes such as initialization, insertion, removal, firmware updates, and read/write errors."
+      },
+      {
+        "company": "University of Illinois at Urbana-Champaign",
+        "title": "AI Research Team Member",
+        "years": "Jan 2019 - May 2019",
+        "description": "I was asked by my Real-Time Systems professor, Lui Sha, to join his research team as they explored new system architectures aimed at improving the security and reliability of Autonomous Vehicular systems. We ultimately decided to base our system on Simplex architecture, a control system design that is now heavily used in safety-critical control software responsible for auto-piloting commercial Boeing airplanes. I was a part of the sub-team responsible for implementing the Simplex controller. Personally, I aided in constructing a simulated autonomous robot model for testing new iterations of our AV system designs by configuring ROS packages and developing custom hardware simulation APIs in C++ within the Gazebo framework. I also implemented steering and actuator controllers with PID feedback controls in C++ for the vehicle's secondary navigation system to greatly stabilize motion mechanics and protect against anomalies in sensor fusion data streams."
+      },
+      {
+        "company": "Switchboard Apparatus Inc.",
+        "title": "Engineer Intern & Senior Engineer Intern",
+        "years": "May 2016 - Aug 2016 & June 2017 - Aug 2017",
+        "description": "Though there are plenty of daily responsibilities and other team projects to talk about that I worked on throughout the two summers I interned at SAI, the most exciting challenge we were given was a summer-long R&D team project where the interns and I: 1) conducted our own research on the manufacturing department to determine potential areas of improvement 2) pitched a practical solution of one of those areas to the department managers 3) designed a prototype of that solution over the course of the summer. After careful research, we began designing a Computer Numerical Control (CNC) router specifically for automating the process of cutting insulation material. Early on, I was voted to be the team lead, where I was responsible for interfacing between departmental managers and making sure we were on track with our project deadlines. Beyond that, I was personally responsible for architecting the control system of our prototype CNC router. This involved writing a G-code interpreter in C++ from scratch with its own instruction set that described and controlled precisely how the servo motors and spindle operated in 3D space as it executed within a synchronous/asynchronous state machine. I also had to implement a Python script that the interpreter used to convert mechanical design schematics to executable G-code."
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "image": "python-c.png",
+        "description": "Django, Flask, Bottle, NumPy, Jupyter, Pandas, MatPlotLib"
+      },
+      {
+        "name": "Javascript",
+        "image": "js-c.png",
+        "description": "Node, Express, Bootstrap, React, AJAX, JQuery"
+      },
+      {
+        "name": "Java",
+        "image": "java-c.png",
+        "description": "Maven, Gradle, Android SDK, OpenGL, ActiveMQ, Tomcat, Eclipse"
+      },
+      {
+        "name": "C++",
+        "image": "cplusplus-c.png",
+        "description": "OpenCV, STL, Boost, CUDA, OpenGL"
+      },
+      {
+        "name": "C",
+        "image": "c-c.png",
+        "description": "In conjunction with x86 assembly"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Project A",
+        "category": "TODO: Add description",
+        "image": "python-logo.svg",
+        "url": "http://www.derekniess.com"
+      },
+      {
+        "title": "Project B",
+        "category": "TODO: Add description",
+        "image": "fury-fighting-gear.jpg",
+        "url": "http://www.derekniess.com"
+      },
+      {
+        "title": "Project C",
+        "category": "TODO: Add description",
+        "image": "original-thai-food.jpg",
+        "url": "http://www.derekniess.com"
+      },
+      {
+        "title": "Project D",
+        "category": "TODO: Add description",
+        "image": "resume-website.jpg",
+        "url": "http://www.derekniess.com"
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "That Derek Niess must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University but I am confident that he will be one of your best developers in no time!",
+        "user": "Steve Wozniak... impersonator"
+      }
+    ]
+  }
+}
