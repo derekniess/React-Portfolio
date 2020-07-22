@@ -9,50 +9,67 @@ import Resume from './Components/Resume';
 import Contact from './Components/Contact';
 import Testimonials from './Components/Testimonials';
 import Portfolio from './Components/Portfolio';
+import * as THREE from 'three';
+import WAVES from './vanta.waves.min.js';
+import GLOBE from './vanta.globe.min.js';
 
 class App extends Component {
 
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       foo: 'bar',
       resumeData: {}
     };
-
+    this.vantaRef = React.createRef();
     ReactGA.initialize('UA-110570651-1');
     ReactGA.pageview(window.location.pathname);
 
   }
 
-  getResumeData(){
+  getResumeData() {
     $.ajax({
-      url:'/resumeData.json',
-      dataType:'json',
+      url: '/resumeData.json',
+      dataType: 'json',
       cache: false,
-      success: function(data){
-        this.setState({resumeData: data});
+      success: function (data) {
+        this.setState({ resumeData: data });
       }.bind(this),
-      error: function(xhr, status, err){
+      error: function (xhr, status, err) {
         console.log(err);
         alert(err);
       }
     });
   }
 
-  componentDidMount(){
+  componentWillUnmount() {
+    if (this.vantaEffect) {
+      this.vantaEffect.destroy();
+    }
+  }
+
+  componentDidMount() {
     this.getResumeData();
+    this.vantaEffect = GLOBE({
+      el: this.vantaRef.current,
+      THREE: THREE,
+      color: 0x230ccd,
+      color2: 0xff2842,
+      backgroundColor: 0x0
+    })
   }
 
   render() {
     return (
       <div className="App">
-        <Header data={this.state.resumeData.main}/>
-        <About data={this.state.resumeData.main}/>
-        <Resume data={this.state.resumeData.resume}/>
-        <Portfolio data={this.state.resumeData.portfolio}/>
-        <Testimonials data={this.state.resumeData.testimonials}/>
-        <Contact data={this.state.resumeData.main}/>
-        <Footer data={this.state.resumeData.main}/>
+        <div className="background" ref={this.vantaRef}></div>
+        <Header data={this.state.resumeData.main} />
+        <About data={this.state.resumeData.main} />
+        <Resume data={this.state.resumeData.resume} />
+        <Portfolio data={this.state.resumeData.portfolio} />
+        <Testimonials data={this.state.resumeData.testimonials} />
+        <Contact data={this.state.resumeData.main} />
+        <Footer data={this.state.resumeData.main} />
       </div>
     );
   }
