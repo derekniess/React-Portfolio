@@ -9,9 +9,9 @@ import Resume from './Components/Resume';
 import Contact from './Components/Contact';
 import Testimonials from './Components/Testimonials';
 import Portfolio from './Components/Portfolio';
-import * as THREE from 'three';
-import WAVES from './vanta.waves.min.js';
+import * as THREE from './three.min.js';
 import GLOBE from './vanta.globe.min.js';
+
 
 class App extends Component {
 
@@ -50,12 +50,26 @@ class App extends Component {
 
   componentDidMount() {
     this.getResumeData();
+    // this.vantaEffect = GLOBE({
+    //   el: this.vantaRef.current,
+    //   THREE: THREE,
+    //   color: 0x230ccd,
+    //   color2: 0xff2842,
+    //   backgroundColor: 0x0
+    // })
     this.vantaEffect = GLOBE({
       el: this.vantaRef.current,
       THREE: THREE,
-      color: 0x230ccd,
+      mouseControls: true,
+      touchControls: true,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x1e7bff,
       color2: 0xff2842,
-      backgroundColor: 0x0
+      backgroundColor: 0x0,
+      size: 1.20
     })
   }
 
