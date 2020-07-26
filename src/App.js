@@ -50,13 +50,7 @@ class App extends Component {
 
   componentDidMount() {
     this.getResumeData();
-    // this.vantaEffect = GLOBE({
-    //   el: this.vantaRef.current,
-    //   THREE: THREE,
-    //   color: 0x230ccd,
-    //   color2: 0xff2842,
-    //   backgroundColor: 0x0
-    // })
+
     this.vantaEffect = GLOBE({
       el: this.vantaRef.current,
       THREE: THREE,
@@ -70,7 +64,7 @@ class App extends Component {
       color2: 0xff2842,
       backgroundColor: 0x0,
       size: 1.20
-    })
+    });
   }
 
   render() {

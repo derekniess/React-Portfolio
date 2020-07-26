@@ -5,7 +5,7 @@
     "description": "who recently graduated with a BS in Computer Engineering from the University of Illinois at Urbana-Champaign where I explored sub-disciplines in Artificial Intelligence, Distributed Computing, Data Systems, and Operating Systems",
     "image": "profile-rounded.png",
     "bio": "Fun fact: the first program I ever made was with my friends in high school where we programmed a bot for a popular MMO called RuneScape to automate in-game level grinding without having to spend hundreds of hours at the computer doing it ourselves. We got the idea to start a small operation creating and selling maxed out character profiles in 3rd-party online gaming marketplaces. It was a hugely rewarding experience, and ever since then I have been hooked on software development and entertaining an entrepeneurial mindset. ",
-    "contactmessage": "Feel free to call/text me any time between 11 a.m. to 6 p.m. M-F, or send me an email using the below form:",
+    "contactmessage": "Feel free to call/text me any time between 9 a.m. to 6 p.m. M-F, or send me an email.",
     "email": "derekniess96@gmail.com",
     "phone": "630-606-2890",
     "address": {
@@ -68,27 +68,135 @@
       {
         "name": "Python",
         "image": "python-c.png",
-        "description": "Django, Flask, Bottle, NumPy, Jupyter, Pandas, MatPlotLib"
+        "experience": "~3-4 years",
+        "garbage": "Arguably the most fun language to use because of how easy it is to prototype with",
+        "description": "Python is my go-to language for data modeling / analysis / visualization and general scripting--building ETL pipelines, constructing ML models, writing data cleaning scripts, you name it. I also have strong experience developing backends and APIs across multiple Python web frameworks within both medium-scale (250,000+ lines) and small-scale codebases.",
+        "libraries": [
+          {
+            "name": "Django",
+            "image": ""
+          },
+          {
+            "name": "Flask",
+            "image": ""
+          },
+          {
+            "name": "Bottle",
+            "image": ""
+          },
+          {
+            "name": "Jupyter",
+            "image": ""
+          },
+          {
+            "name": "NumPy",
+            "image": ""
+          },
+          {
+            "name": "Pandas",
+            "image": ""
+          },
+          {
+            "name": "PyTorch",
+            "image": ""
+          }
+        ]
       },
       {
         "name": "Javascript",
         "image": "js-c.png",
-        "description": "Node, Express, Bootstrap, React, AJAX, JQuery"
+        "experience": "~3-4 years",
+        "description": "Whenever I have the chance, I will typically choose Javascript for UI design. Having used Javascript since high school and given that it is arguably the most well-documented language for web development, it's always a fun and relatively painless process tinkering around with new Javascript frameworks for my projects' frontends. React is currently my favorite.",
+        "libraries": [
+          {
+            "name": "React",
+            "image": ""
+          },
+          {
+            "name": "Bootstrap",
+            "image": ""
+          },
+          {
+            "name": "Node",
+            "image": ""
+          },
+          {
+            "name": "JQuery",
+            "image": ""
+          },
+          {
+            "name": "AJAX",
+            "image": ""
+          }
+        ]
       },
       {
         "name": "Java",
         "image": "java-c.png",
-        "description": "Maven, Gradle, Android SDK, OpenGL, ActiveMQ, Tomcat, Eclipse"
+        "experience": "~2 years",
+        "garbage": "One of the more complex projects I've used Java for is building a distributed system that simulates the network architecture of the stock market.",
+        "description": "The more I learn about system design patterns, the more I've found myself appreciating Java for how strongly it enforces object-oriented design. I've used Java for semester-long projects, mobile app development, and message-based apps. I particularly look forward to using Java for enterprise systems in the future.",
+        "libraries": [
+          {
+            "name": "Maven",
+            "image": ""
+          },
+          {
+            "name": "Gradle",
+            "image": ""
+          },
+          {
+            "name": "Android SDK",
+            "image": ""
+          },
+          {
+            "name": "OpenGL",
+            "image": ""
+          },
+          {
+            "name": "ActiveMQ",
+            "image": ""
+          },
+          {
+            "name": "Eclipse",
+            "image": ""
+          }
+        ]
       },
       {
         "name": "C++",
         "image": "cplusplus-c.png",
-        "description": "OpenCV, STL, Boost, CUDA, OpenGL"
+        "experience": "~3-4 years",
+        "garbage": "High performance computing, embedded systems, real-time systems, GPU parallel programming",
+        "description": "While there are certainly ways around performance bottlenecks with scripting languages like Python, I typically write applications and libraries that demand high performance / careful use of limited resources in C++. For that reason, all of my parallel computing and embedded real-time programming is done in C++. My experience with C++ spans from professional to academic to personal use over several projects.",
+        "libraries": [
+          {
+            "name": "OpenCV",
+            "image": ""
+          },
+          {
+            "name": "STL",
+            "image": ""
+          },
+          {
+            "name": "Boost",
+            "image": ""
+          },
+          {
+            "name": "CUDA",
+            "image": ""
+          },
+          {
+            "name": "OpenGL",
+            "image": ""
+          }
+        ]
       },
       {
         "name": "C",
         "image": "c-c.png",
-        "description": "In conjunction with x86 assembly"
+        "experience": "~2 years",
+        "description": "As a software engineering major, I've taken a curriculum of courses that dive deep into low-level design. C and x86 assembly were the primary tools we used. Some examples include building my own operating system from scratch in C, developing embedded software for FPGAs in C, and C-style socket programming for distributed systems. I have no problem getting my hands dirty with bare metal code."
       }
     ]
   },
