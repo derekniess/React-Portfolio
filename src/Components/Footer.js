@@ -20,6 +20,7 @@ class Footer extends Component {
           </div>
           <div id="go-top"><a className="smoothscroll" title="Back to Top" href="#home"><i className="icon-up-open"></i></a></div>
         </div>
+        <div className="power">Powered by caffeine and l-theanine! 🍵</div>
       </footer>
     );
   }

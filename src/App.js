@@ -70,7 +70,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="background" ref={this.vantaRef}></div>
+        <div className="background" ref={this.vantaRef} />
         <Header data={this.state.resumeData.main} />
         <About data={this.state.resumeData.main} />
         <Resume data={this.state.resumeData.resume} />

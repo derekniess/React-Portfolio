@@ -20,18 +20,20 @@ class Resume extends Component {
 
       var skills = this.props.data.skills.map(function (skills) {
         var skillImage = 'images/tech/' + skills.image;
-        return <div key={skills.name} className="columns feature-item">
+        var tech = skills.tech.map(function (library) { library.image = 'images/tech/' + library.image; return library });
+        return <div key={skills.name} className="two columns feature-item skill-box">
           <img alt={skills.name} src={skillImage} />
           <h5>{skills.name}</h5>
           <h6>Experience: {skills.experience}</h6>
           <p>{skills.description}</p>
-
+          <p>Top 3 technologies: </p>
+          <ul>{tech.map((library, idx) => <LibraryList name={library.name} image={library.image} type={library.type} key={idx} />)}</ul>
         </div>
       })
     }
 
     return (
-      <section id="resume">
+      <section id="resume" >
 
         <div className="row education">
           <div className="three columns header-col">
@@ -69,7 +71,7 @@ class Resume extends Component {
 
           <div>
             <div className="nine columns main-col"><p className="lead center">{skillheadline}{skillmessage}</p></div>
-            <ul className="bgrid-quarters s-bgrid-thirds cf">
+            <ul className="bgrid-halves s-bgrid-halves cf">
               {skills}
             </ul>
           </div>
@@ -77,6 +79,16 @@ class Resume extends Component {
       </section>
     );
   }
+}
+
+class LibraryList extends Component {
+  render() {
+    return <li className="tools">
+      <img src={this.props.image} />
+      <span className="full-stack-item">{this.props.name}</span>
+      <span className="full-stack-item-field">{this.props.type}</span>
+    </li>
+  };
 }
 
 export default Resume;

@@ -2,7 +2,7 @@
   "main": {
     "name": "Derek Niess",
     "occupation": "Software Engineer",
-    "description": "who recently graduated with a BS in Computer Engineering from the University of Illinois at Urbana-Champaign where I explored sub-disciplines in Artificial Intelligence, Distributed Computing, Data Systems, and Operating Systems",
+    "description": "who recently graduated with a BS in Computer Engineering from the University of Illinois at Urbana-Champaign where I explored sub-disciplines in Artificial Intelligence, Distributed Computing, Database Management Systems, and Operating Systems",
     "image": "profile-rounded.png",
     "bio": "Fun fact: the first program I ever made was with my friends in high school where we programmed a bot for a popular MMO called RuneScape to automate in-game level grinding without having to spend hundreds of hours at the computer doing it ourselves. We got the idea to start a small operation creating and selling maxed out character profiles in 3rd-party online gaming marketplaces. It was a hugely rewarding experience, and ever since then I have been hooked on software development and entertaining an entrepeneurial mindset. ",
     "contactmessage": "Feel free to call/text me any time between 9 a.m. to 6 p.m. M-F, or send me an email.",
@@ -28,8 +28,8 @@
     ]
   },
   "resume": {
-    "skillheadline": "Full-stack development and parallel programming are my bread and butter",
-    "skillmessage": ", though I also have some experience in data science, database optimization, control systems, and operating systems as a result of academic and professional study. Cumulatively, I have been building web apps, primarily in Python and Javascript, for around 3 years now. Throughout that time, I have developed with a handful of frameworks and database systems listed below, and I have utilized many libraries not listed as it would be a bit excessive to list them all out. If you have a particular library or framework that you are looking for, I'm confident that I have the related foundational experience to start applying it in no time!",
+    "skillheadline": "Backend web development and parallel programming are my bread and butter",
+    "skillmessage": ", though I also have a solid foundation in data science, cyber-physical systems, and operating systems as a result of professional and academic study. Cumulatively, I have been building web apps, primarily in Python and Javascript, for around 3 years now. Throughout that time, I have developed with a handful of frameworks and database systems, many of which are listed below. If you have a particular library or framework that you are looking for, there's a chance I've worked with it, and if not I'm confident that I have the related underlying experience to start applying it in no time!",
     "education": [
       {
         "school": "University of Illinois at Urbana-Champaign",
@@ -49,7 +49,7 @@
         "company": "Monument Labs Inc.",
         "title": "Software Developer Intern",
         "years": "June 2019 - Aug 2019",
-        "description": "My time at Monument was fast-paced from the start, where I immediately began completing tickets within their CI/CD workflow for new releases of their main software. Daily peer reviews pushed me to further develop strong habits of writing clean, readable, and efficient code in accordance with commonly accepted best practices. Throughout the internship, I made contributions to almost all parts of their software, including their main web API. Some examples of my work include: 1) designing relational schema and scripts to perform database migrations on 1,000,000+ records with zero downtime on a MySQL version that does not inherently allow online alterations 2) developing automated unit/regression test suites in PyTest and Unittest responsible for checking 100+ test cases on Monument's main backend API as they relate to all scopes of testing in quality control 3) incorporating real-time user analytics data pipeline into flagship devices by implementing a background ETL service that continuously aggregates and streams new user data from 1,000s of users to AWS Kinesis 4) implementing multi-threaded event handling for external storage device processes such as initialization, insertion, removal, firmware updates, and read/write errors."
+        "description": "Upon joining Monument's team for the summer, I immediately began completing tickets and receiving daily peer-reviews per their CI/CD workflow for new releases of Monument's proprietary software--all of which was debugged on an embedded Linux machine over an SSH connection. Some examples of my work include: 1) designing relational schema and scripts to perform database migrations on 1,000,000+ records with zero downtime on a MySQL version that does not inherently allow online alterations 2) developing automated unit/regression test suites in PyTest and Unittest responsible for checking 100+ test cases on Monument's main backend API as they relate to all scopes of testing in quality control 3) incorporating real-time user analytics data pipeline into flagship devices by implementing a background ETL service that continuously aggregates and streams new user data from 1,000s of users to AWS Kinesis 4) implementing multi-threaded event handling for external storage device processes such as initialization, insertion, removal, firmware updates, and read/write errors."
       },
       {
         "company": "University of Illinois at Urbana-Champaign",
@@ -69,64 +69,45 @@
         "name": "Python",
         "image": "python-c.png",
         "experience": "~3-4 years",
-        "garbage": "Arguably the most fun language to use because of how easy it is to prototype with",
-        "description": "Python is my go-to language for data modeling / analysis / visualization and general scripting--building ETL pipelines, constructing ML models, writing data cleaning scripts, you name it. I also have strong experience developing backends and APIs across multiple Python web frameworks within both medium-scale (250,000+ lines) and small-scale codebases.",
-        "libraries": [
+        "description": "Python is my go-to language for data modeling / analysis / visualization and general scripting--building ETL pipelines, constructing ML models, writing data wrangling scripts, you name it. I use NumPy, Pandas, and Matplotlib frequently for data-driven tasks. I also have strong experience developing backend apps and APIs across multiple Python web frameworks within both medium-scale (250,000+ lines) and small-scale codebases.",
+        "tech": [
           {
             "name": "Django",
-            "image": ""
+            "type": "Framework",
+            "image": "django.png"
           },
           {
             "name": "Flask",
-            "image": ""
+            "type": "Framework",
+            "image": "flask.png"
           },
           {
             "name": "Bottle",
-            "image": ""
-          },
-          {
-            "name": "Jupyter",
-            "image": ""
-          },
-          {
-            "name": "NumPy",
-            "image": ""
-          },
-          {
-            "name": "Pandas",
-            "image": ""
-          },
-          {
-            "name": "PyTorch",
-            "image": ""
+            "type": "Framework",
+            "image": "bottle.png"
           }
         ]
       },
       {
         "name": "Javascript",
         "image": "js-c.png",
-        "experience": "~3-4 years",
-        "description": "Whenever I have the chance, I will typically choose Javascript for UI design. Having used Javascript since high school and given that it is arguably the most well-documented language for web development, it's always a fun and relatively painless process tinkering around with new Javascript frameworks for my projects' frontends. React is currently my favorite.",
-        "libraries": [
+        "experience": "~3 years",
+        "description": "Whenever I have the chance, I will typically choose Javascript for UI design. Having used Javascript since high school and given that it is arguably the most well-documented language for web development, it's always a fun and relatively painless process tinkering around with new Javascript frameworks for my projects' frontend design. React is currently my favorite. In fact, I built this website using React!",
+        "tech": [
           {
-            "name": "React",
-            "image": ""
+            "name": "React.js",
+            "type": "Framework",
+            "image": "react.png"
           },
           {
             "name": "Bootstrap",
-            "image": ""
+            "type": "Framework",
+            "image": "bootstrap.png"
           },
           {
-            "name": "Node",
-            "image": ""
-          },
-          {
-            "name": "JQuery",
-            "image": ""
-          },
-          {
-            "name": "AJAX",
-            "image": ""
+            "name": "Node.js",
+            "type": "Environment",
+            "image": "nodejs.png"
           }
         ]
       },
@@ -135,31 +116,22 @@
         "image": "java-c.png",
         "experience": "~2 years",
         "garbage": "One of the more complex projects I've used Java for is building a distributed system that simulates the network architecture of the stock market.",
-        "description": "The more I learn about system design patterns, the more I've found myself appreciating Java for how strongly it enforces object-oriented design. I've used Java for semester-long projects, mobile app development, and message-based apps. I particularly look forward to using Java for enterprise systems in the future.",
-        "libraries": [
+        "description": "The more I learn about system design patterns, the more I've found myself appreciating Java for how strongly it enforces object-oriented design. I've used Java for various course projects, mobile app development, and message-based apps over the last few years, working almost exclusively in Eclipse in an SE runtime environment. I particularly look forward to using J2EE for enterprise distributed systems in the future that.",
+        "tech": [
           {
             "name": "Maven",
-            "image": ""
+            "type": "Build Automation",
+            "image": "maven.png"
           },
           {
             "name": "Gradle",
-            "image": ""
-          },
-          {
-            "name": "Android SDK",
-            "image": ""
-          },
-          {
-            "name": "OpenGL",
-            "image": ""
+            "type": "Build Automation",
+            "image": "gradle.png"
           },
           {
             "name": "ActiveMQ",
-            "image": ""
-          },
-          {
-            "name": "Eclipse",
-            "image": ""
+            "type": "Messaging Service",
+            "image": "activemq.png"
           }
         ]
       },
@@ -168,27 +140,22 @@
         "image": "cplusplus-c.png",
         "experience": "~3-4 years",
         "garbage": "High performance computing, embedded systems, real-time systems, GPU parallel programming",
-        "description": "While there are certainly ways around performance bottlenecks with scripting languages like Python, I typically write applications and libraries that demand high performance / careful use of limited resources in C++. For that reason, all of my parallel computing and embedded real-time programming is done in C++. My experience with C++ spans from professional to academic to personal use over several projects.",
-        "libraries": [
-          {
-            "name": "OpenCV",
-            "image": ""
-          },
-          {
-            "name": "STL",
-            "image": ""
-          },
-          {
-            "name": "Boost",
-            "image": ""
-          },
+        "description": "While there are certainly ways around performance bottlenecks with scripting languages like Python, I typically write applications and libraries that demand high performance / careful use of limited resources in C++. For that reason, all of my parallel computing and (embedded) real-time programming is done in C++. My experience with C++ spans from professional to academic to personal use over several projects.",
+        "tech": [
           {
             "name": "CUDA",
-            "image": ""
+            "type": "Platform / API",
+            "image": "cuda.png"
           },
           {
             "name": "OpenGL",
-            "image": ""
+            "type": "API",
+            "image": "opengl.png"
+          },
+          {
+            "name": "Visual Studio",
+            "type": "IDE",
+            "image": "visualstudio.png"
           }
         ]
       },
@@ -196,7 +163,48 @@
         "name": "C",
         "image": "c-c.png",
         "experience": "~2 years",
-        "description": "As a software engineering major, I've taken a curriculum of courses that dive deep into low-level design. C and x86 assembly were the primary tools we used. Some examples include building my own operating system from scratch in C, developing embedded software for FPGAs in C, and C-style socket programming for distributed systems. I have no problem getting my hands dirty with bare metal code."
+        "description": "As a software engineering major, I've taken a curriculum of courses that dive deep into low-level design. C and x86 assembly were the primary tools we used. Some examples include building my own operating system from scratch in C and x86, developing C applications for FPGAs in conjunction with System Verilog, and C-style socket programming for distributed systems. I have no problem getting my hands dirty with bare metal code.",
+        "tech": [
+          {
+            "name": "Embedded C",
+            "type": "Language Extension",
+            "image": "embeddedC.png"
+          },
+          {
+            "name": "x86",
+            "type": "Language",
+            "image": "assembly.png"
+          },
+          {
+            "name": "Make",
+            "type": "Build Automation",
+            "image": "makefile.png"
+          }
+        ]
+      },
+      {
+        "name": "SQL / NoSQL",
+        "image": "database.png",
+        "experience": "~2-3 years",
+        "garbage": "talk about database systems class. SQLite for embedded. AWS for web apps I host on EC2 and beanstalk, as it provides easy security and management.",
+        "description": "Beyond having experience formulating advanced SQL / NoSQL queries and schemas, I also have a strong understanding of how to exploit underlying DBMS architecture to achieve better performance. I've taken coursework in database system design--relational, document, graph--and I have invested many hours throughout my recent internship and building web APIs into researching DBMS-specific design patterns / resource management strategies for performance optimization. Though not listed below, I also have experience with cloud-based distributed databases such as AWS RDS and DynamoDB.",
+        "tech": [
+          {
+            "name": "MySQL",
+            "type": "Database",
+            "image": "mysql.png"
+          },
+          {
+            "name": "PostGreSQL",
+            "type": "Database",
+            "image": "postgresql.png"
+          },
+          {
+            "name": "MongoDB",
+            "type": "Database",
+            "image": "mongodb.png"
+          }
+        ]
       }
     ]
   },
@@ -204,31 +212,31 @@
     "projects": [
       {
         "title": "3D Physics Engine",
-        "category": "C++, OpenCL, CMake",
+        "category": "View Source Code",
         "image": "slowmo_boxes-edit.gif",
-        "url": "https://github.com/derekniess/3D-Physics-Engine"
+        "url": "https://derekniess.github.io/3D-Physics-Engine/"
       },
       {
-        "title": "Pathfinding Algorithm Visualizer",
-        "category": "Python, JavaScript, Flask, Bootstrap, Node, AJAX, HTML/CSS, Express, Heroku, Git",
+        "title": "Pathfinding Algo Visualizer",
+        "category": "View Project",
         "image": "path_demo-edit.gif",
         "url": "https://pathfinding-visualizer.herokuapp.com/#"
       },
       {
         "title": "Trading System",
-        "category": "Java, QuickFIX, Maven, ActiveMQ, MongoDB, MySql, Ubuntu, Eclipse Mars",
+        "category": "View Source Code",
         "image": "trade_monitor-edit2.jpg",
         "url": "https://derekniess.github.io/Trading-System/"
       },
       {
         "title": "Beacon Navigator",
-        "category": "Java, Android Studio, OpenGL",
+        "category": "View Demo",
         "image": "beacon_demo-edit2.gif",
         "url": "https://www.youtube.com/watch?v=cZ6ynCBAhJ4&feature=youtu.be"
       },
       {
         "title": "Homebrew Operating System",
-        "category": "C, x86 Assembly",
+        "category": "View Source Code",
         "image": "homebrew_os-edit2.png",
         "url": "https://github.com/derekniess/homebrew-OS"
       }

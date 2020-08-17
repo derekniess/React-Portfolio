@@ -7,6 +7,7 @@ class Portfolio extends Component {
       var projects = this.props.data.projects.map(function (projects) {
         var projectImage = 'images/portfolio/' + projects.image;
         return <div key={projects.title} className="columns portfolio-item">
+          <h6>{projects.title}</h6>
           <div className="item-wrap">
             <a href={projects.url} title={projects.title}>
               <img alt={projects.title} src={projectImage} />
@@ -30,7 +31,7 @@ class Portfolio extends Component {
 
           <div className="twelve columns collapsed">
 
-            <h1>Here are some of the projects I have worked on over the last 5 years. I am currently in the process of refactoring, documenting, and deploying old personal and academic projects when possible so that they can be properly showcased here and on Github, so stay tuned for updates if a particular project isn't currently shown here! </h1>
+            <h1>These are some of the projects I have worked on recently. I am currently in the process of refactoring, documenting, and deploying old personal/academic projects when possible so that they can be properly showcased here and on Github, so stay tuned for updates if a particular project isn't currently shown here! </h1>
 
             <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
               {projects}
